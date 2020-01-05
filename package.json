@@ -1,0 +1,14 @@
+{
+  "name": "@paxperscientiam/lint",
+  "version": "1.0.0",
+  "description": "CLI wrapper for various linters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christopher David Ramos",
+  "license": "ISC",
+  "devDependencies": {
+    "generate-gitignore": "^0.2.6"
+  }
+}
