@@ -18,8 +18,12 @@ lint::color:notice() {
 
 lint::table() {
     local input="${1?}"
+    #
     local ts="tslint"
+    local js="js" #spidermonkey
     local json="jsonlint"
+    local yaml="yamllint"; local yml="yamllint"
+    #
     lint::color:notice "using ${!1} ..." >/dev/tty
     echo "${!1}"
 }
@@ -31,6 +35,8 @@ lint() {
     ext="${file##*.}"
     local linter
     linter=$(lint::table "$ext")
+    [[ "${#linter}" -eq 0 ]] && \
+        lint::color:error "No linter known" && exit 77
     $linter "$*"
 }
 
