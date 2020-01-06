@@ -11,4 +11,6 @@ lint.bash
 * yamllint: `.yaml, .yml`
 
 # Goals
-I would like to add a whole bunch more. Better still, I want to make `lint.bash` extensible such that users could expand support to their liking.
+* NEED to support linter options (duh!)
+* I would like to add a whole bunch more linters.
+* Better still, I want to make `lint.bash` extensible such that users could expand support to their liking.
